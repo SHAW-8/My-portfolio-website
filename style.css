@@ -199,7 +199,7 @@ body{
         /* THIS IS THE FOOTER SECTION WITH MYLINKS ICONS*/
 /* ...................................................... */
 .footer{
-   margin: 85px 0 0 0;
+   margin: 8px 0 0 0;
    background-color: rgba(59, 58, 58, 0.418);
 
 }
@@ -410,6 +410,9 @@ width: 100%;
         /* margin: 20px; */
         
     }
+    *{
+        box-sizing: border-box;
+    }
 
     .FIRST-Contsiner{
         height: fit-content;
@@ -419,6 +422,7 @@ width: 100%;
     /* TOP NAVIGATION BAR CONTAINER */
     .Project_Container{
         height: auto;
+        background-color: ;
     }
     .profile_container{
         display: flex;
@@ -444,8 +448,11 @@ width: 100%;
 
     .profile_container ul{
         display: flex;
+        width: 100%;
         flex-direction: column;
-        margin:  0 0 0 50px;
+        margin:  0 0 0 0;
+        align-items: center;
+       
     }
 
      .BODY_CONTAINER{
@@ -456,40 +463,28 @@ width: 100%;
     }
 
     #hello-message-container{
-       margin: 20px 0 50px 0;
+       margin: 0 0 10px 0;
 
     }
 
     .BODY_CONTAINER #discription{
-        margin-top: 20px ;
+        margin-top: 40px ;
     }
 
     .footer ul{
         width: 100%;
         padding: 0;
         background-color: #5e5d5dc0;
+        margin: 0;
     }
 
     .footer{
+        /* margin: 0; */
        
     }
 
     .column, input[type=submit] {
     width: 100%;
-    margin-top: 0;
+    margin-top: 30px;
     }
 } 
-
-
-
-                /* MEDIA QUERY FOR MY PROJECTS CARDS */
-/* .......................................................... */
-@media screen and (max-width: 600px) {
-
-/* body {
-background-color: rgb(255, 255, 255);
-/* margin: 20; */
-height: 100vh;
-width: 100vw
-} */
-}
