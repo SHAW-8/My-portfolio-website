@@ -469,6 +469,8 @@ width: 100%;
 
     .BODY_CONTAINER #discription{
         margin-top: 40px ;
+        height: fit-content;
+        padding: 10px;
     }
 
     .footer ul{
