@@ -38,6 +38,10 @@ body{
     padding: 0;
     height: 100%;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
 }
 
 /* MY ACTUAL PROFILE CONTAINER */
@@ -155,9 +159,28 @@ body{
     color: rgb(255, 217, 0);
 }
 
+.BODY_CONTAINER #hello-message-container> *:nth-child(4){
+    font-size: 25px;
+    letter-spacing: 5px;
+    text-wrap: nowrap;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
 
             /* THIS IS MY INTRO PARAGRAPHS*/
 /* ...................................................... */
+
+
+.PARENT-DISCRIPTION{
+    display: flex;
+    flex-direction: ;
+    width: 100%;
+    margin: 50px 0 0 0;
+    align-items: center;
+    justify-content: space-around;
+}
+
 .BODY_CONTAINER #discription{
     height: auto;
     width: 250px;
@@ -406,24 +429,25 @@ width: 100%;
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
 
-    body{
-        /* margin: 20px; */
-        
-    }
     *{
         box-sizing: border-box;
     }
 
     .FIRST-Contsiner{
-        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .FIRST-Contsiner{
+        height: 100%;
         background-color: #000000c5;
+        width: 100%;
     }
 
     /* TOP NAVIGATION BAR CONTAINER */
-    .Project_Container{
-        height: auto;
-        background-color: ;
-    }
+    
     .profile_container{
         display: flex;
         justify-content: flex-start;
@@ -467,6 +491,11 @@ width: 100%;
 
     }
 
+    .PARENT-DISCRIPTION{
+        display: flex;
+        flex-direction: column;
+    }
+
     .BODY_CONTAINER #discription{
         margin-top: 40px ;
         height: fit-content;
@@ -481,7 +510,6 @@ width: 100%;
     }
 
     .footer{
-        /* margin: 0; */
        
     }
 
@@ -490,3 +518,74 @@ width: 100%;
     margin-top: 30px;
     }
 } 
+
+
+/* MEDIA QUERY FOR TABLETS  */
+/* ................................................................................... */
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 1000px) {
+    .Project_Container{
+        /* display: none; */
+    }
+
+    *{
+        box-sizing: border-box;
+    }
+
+    .BODY_CONTAINER{
+        display: flex;
+        flex-direction: column;
+        /* padding: 0; */
+        width: 100%;
+    }
+
+    .FIRST-Contsiner{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+
+    #hello-message-container{
+        height: fit-content;
+        width: 100%;
+    }
+
+    .BODY_CONTAINER #hello-message-container> *:nth-child(4){
+        /* color: #000000; */
+        font-size: 25px;
+        font-weight: 100; 
+        font-stretch: expanded;
+        display: block;
+        margin: 15px;
+    }
+
+
+    .BODY_CONTAINER #hello-message-container > *:nth-child(4) {
+        line-height: 1px;
+        display: block;
+        line-height: 0px;
+        margin: 0;
+        font-size: 25px;
+        font-weight: 100;
+        letter-spacing: 8px; 
+        font-stretch: expanded;
+        
+    }
+
+    .PARENT-DISCRIPTION{
+        display: flex;
+        width: 100%;
+        margin-top: 10px;
+        justify-content: space-between;
+    }
+    .PARENT-DISCRIPTION #discription{
+       margin: 20px 0 0 0;
+    }
+
+    #hello-message-container #SHAW{
+        font-size: 140px;
+    }
+
+
+  }
