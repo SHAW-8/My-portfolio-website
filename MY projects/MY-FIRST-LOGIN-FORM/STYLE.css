@@ -1,0 +1,115 @@
+html body{
+    margin: 0;
+    padding: 0;
+    min-width: 100vh;
+    min-height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1579548122080-c35fd6820ecb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+*{box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.container{
+    min-width: 50%;
+    min-height: 600px;
+    border: 7.5px solid #057cdd;
+    box-shadow: 0 0 10px rgb(0, 162, 255);
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.877);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.login-page{
+    color: white;
+    text-align: center;
+    width: 70%;
+    margin-bottom: 2em;
+    margin-top: 25px;
+}
+
+
+.login-page h1{
+    font-size: 3em;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    
+}
+
+.login-page p{
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+form {
+    width: 75%;    
+}
+
+form .form-con input{
+    min-width: 100%;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #089ad2;
+     /* margin-left: 10px; */
+     margin-bottom: 20px;
+}
+
+.form-con label{
+    color: white;
+    font-size: 12px;
+}
+
+.button-cover{
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+button{
+    background: none;
+    border: 2px solid rgb(0, 195, 255);
+    padding: 10px;
+    color: white;
+    font-size: 11px;
+    cursor: pointer;
+    min-width: 110px;
+    min-height: 45px;
+    box-sizing: border-box;
+    box-shadow: 0 0 5px rgb(0, 174, 255);
+}
+
+button .fa-solid{
+    margin-left: 5px;
+}
+
+button:hover{
+    background-color: rgba(0, 70, 102, 0.527);
+    color:white;
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,158 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    background-color: black;
+    height: 75px;
+    
+}
+
+.header img{
+    height: 70px;
+    width:85px;
+    position: relative;
+    left: 10%;
+}
+
+.main img{
+    width: 100%;
+    height: 595px;
+    position: relative;
+    background-size: auto;
+    background-repeat: no-repeat;
+    margin-bottom: 40px;
+    box-sizing: border-box;
+}
+
+
+.main #first-p{
+    width: 60%;
+    height: auto;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+.main h1{
+    text-align: center;
+    font-size: 13px;
+    color: rgb(0, 183, 255);
+    text-transform: uppercase;
+}
+
+
+.main :nth-of-type(2){
+ text-align: center;
+ font-size: 13px;
+ color: black;
+ width: 40%;
+ margin:0 auto;
+ margin-bottom: 30px;
+}
+
+.main p span, .main p:nth-child(2){
+    font-weight: 600;
+    color: rgb(90, 90, 90);
+}
+
+.main p:nth-of-type(3){
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+   
+}
+
+.main p span{
+    line-height: 20px;
+}
+
+
+.flex-center{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: ;
+    align-self: center;
+    margin-bottom: 25px;
+
+
+}
+
+.albums{
+    width: 55%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: auto;
+    background-color: rgba(128, 128, 128, 0.171);
+    padding: 10px 30px 10px 30px;
+    
+}
+
+
+.albums .images {
+    width: 150px;
+    height: 120px;
+    position: relative;
+    transition: transform 1.2s;
+    
+}
+
+.images {
+    width: 150px;
+    height: 120px;
+    position: relative;
+    
+    transition: transform 1.2s;
+    
+}
+
+
+
+.albums .images:hover{
+    transform: scale(1.2);
+    background-color: bisque;
+    
+    
+
+}
+
+button {
+    background-color: rgb(0, 183, 255);
+    border: none;
+    height: 30px;
+    display: block;
+    margin: 0 auto;
+    font-size: 11px;
+    width: 200px;
+    color: white;
+    transition: transform 1.2s; 
+    margin-bottom: 10px;
+}
+
+button:hover{
+    transform: scale(1.2);
+}
+
+
+.palm-three img{
+    width: 85px;
+    height: 85px;
+    margin: 0 auto;
+    display: block;
+}
+
+.blue-background {
+    text-align: center;
+    background-color: rgba(59, 212, 212, 0.308);
+    
+    }
+
+    .blue-background, h1, p {
+        margin: 30px 0;
+    
+    }

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator app</title>
+</head>
+<body>
+
+    <div class="container">
+        <input class="input" type="text" disabled>
+        <div class="key_container">
+            <button id="greed" class="key">/</button>
+            <button class="key">7</button>
+            <button class="key">8</button>
+            <button class="key">9</button>
+            <button id="greed" class="key">*</button>
+            <button class="key">6</button>
+            <button class="key">5</button>
+            <button class="key">4</button>
+            <button id="greed" class="key">-</button>
+            <button class="key">3</button>
+
+            <button class="key">2</button>
+            <button class="key">1</button>
+            <button id="greed" class="key">+</button>
+            <button class="key">0</button>
+            <button class="key">.</button>
+            <button class="calculate">=</button>
+            <button id="greed" class="clear">C</button>
+        </div>
+    </div>
+   
+   <script>
+
+
+
+
+
+// Get the input element and buttons
+let input = document.querySelector('.input');
+let buttons = document.querySelectorAll('.key');
+let calculate = document.querySelector('.calculate');
+let clear = document.querySelector('.clear');
+
+buttons.forEach(button =>{
+    button.addEventListener('click', function(){
+        input.value += button.innerHTML;
+    });
+});
+
+
+// Calcuate input value when equal is clicked.. 
+calculate.addEventListener('click', function(){
+
+    
+    let expression = input.value;
+    let result;
+    try { result = eval(expression);
+            
+        input.value = result;
+            
+        
+    } catch (error) {
+        alert('invalid input')
+        input.value = '';
+    }
+})
+
+
+// CLEAR input when clear button is clicked..
+clear.addEventListener('click', ()=>{
+  console.log();
+  input.value = input.value.slice(0, -1);
+});
+
+
+    </script>
+</body>
+</html>

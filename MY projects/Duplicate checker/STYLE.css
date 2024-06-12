@@ -1,0 +1,128 @@
+body{
+    background-color: #071D2B;
+    margin: 0;
+    padding: 0;
+}
+
+.topContainer{
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin:  0 100px;
+    color: white;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    padding: 15px 0px 20px 0px ;
+    margin-left: 108px;
+}
+
+/* header icon*/
+.header .fa-solid{
+    color: #ff7800;
+    font-size: 35px;
+    padding: 0 7px 11px 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Subtitle { duplicate checker}*/
+.header #duplicate_Checker{
+    color: rgb(255, 255, 255);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.instruction {
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.instruction p{
+    color: white;
+    text-align: justify;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+ #paragraphBox{
+width: 70%;
+height:20vh;
+padding: 20px;
+overflow: hidden;
+box-sizing: border-box;
+border-radius: 10px;
+box-shadow: 0 0 3px white;
+background-color: #ff770013;
+color: white;
+}
+
+#paragraphBox:hover{
+    background-color: rgba(250, 235, 215, 0.062);
+}
+
+#wordChoice:hover{
+    background-color: rgba(250, 235, 215, 0.062);
+    box-shadow: 0 0 0 3px #ff770013;
+    border: none;
+}
+
+#wordChoiceButton {
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px; 
+
+}
+
+#wordChoiceButton input{
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    margin-right: 15px;
+    border-radius: 10px;
+    padding: 2px 15px 2px 15px ;
+    background-color: #ff770013;
+    font-family: ;
+
+}
+
+#wordChoiceButton button{
+    border-radius: 10px;
+    border: .5px solid rgba(8, 8, 8, 0.199);
+    background-color: #ff7800;
+    box-shadow:  #ff7800;
+    width: 50px;
+    color: white;
+
+}
+
+#wordChoiceButton button:hover{
+    color: #ff7800;
+    background-color: white;
+}
+
+/*FOOTER*/
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer ul {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-around;
+ width: 35%;
+ padding: 15px 0 0 0 ;
+ list-style-type: none;
+ color: #ff7700;
+ margin: 0;
+}
+
+.footer ul li:hover{
+    color: #f0f0f0;
+    border-bottom: 1px solid white;
+    
+}

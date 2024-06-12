@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="STYLE.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Generator</title>
+</head>
+<body>
+    <p style="margin-left: 30px; font-size: 25px;">This website generates a random coler and is hex code..</p>
+    
+     <div class="container">
+        <h1 id="myH1">Color Generator</h1>
+        <div id="colorContainer"></div>
+        <p>Click button below to generate color..</p>
+        <button id="buttonCollor"  type="button">CLICK</button>
+        <h1 id="colorCode"></h1>
+    </div>
+
+
+    <script>
+const colorContainer = document.getElementById('colorContainer');
+    const buttonCollor = document.getElementById('buttonCollor');
+    const colorCode = document.getElementById('colorCode');
+    buttonCollor.addEventListener('click', function(){
+        return generateColor()
+    })
+
+function generateColor() {
+    let colorArray = ['0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'];
+    let hexColorRep = "#";
+    for (let i = 0; i < 6; i++) {
+        hexColorRep += colorArray[Math.floor(Math.random() * 16)]; // Generating random index between 0 and 15
+    }
+        colorContainer.style.backgroundColor = hexColorRep;
+        buttonCollor.style.borderColor = hexColorRep;
+        colorCode.innerHTML= `Color code: ${hexColorRep}`;
+
+}
+
+    </script>
+
+</body>
+</html>

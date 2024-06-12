@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Document</title> -->
+    <link rel="stylesheet" href="STYLE.css">
+        <!-- font link below -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Duplicate_Checker</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <i class="fa-solid fa-d fa-beat-fade" style="color: #ff7800;"></i>
+        <h1 id="duplicate_Checker">Duplicate Checker</h1>
+    </header>
+
+    <div class="topContainer">
+
+        <div class="instruction">
+            <h3 style="color: #ff7800;">Instruction:</h3>
+            <p >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione dolore aspernatur soluta laudantium at saepe repudiandae veniam delectus cumque, quis praesentium vitae quasi reiciendis, maxime nulla molestias, nemo totam accusamus.</p>
+        </div>
+
+        <textarea id="paragraphBox" placeholder="Paste your paragraph here..." ></textarea>
+
+        <div id="wordChoiceButton">
+            <input type="text" id="wordChoice" placeholder="Enter search word...">
+            <button onclick="wordChecker()"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        
+        <p id="result" style="font-family: 'Courier New', Courier, monospace;">Result: </p>
+    </div>
+
+    <div class="footer">
+        <ul>
+            <li>About</li>
+            <li>Contact</li>
+            <li>More</li>
+            <li>Publisher</li>
+        </ul>
+    </div>
+
+    <script src="SCRIPT.js"></script>
+</body>
+</html> 
